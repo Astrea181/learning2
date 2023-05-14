@@ -1,0 +1,297 @@
+@Font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@Font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@Font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@Font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular.ttf');
+	font-style: normal;
+}
+
+
+/* global reset */
+html, body, body div, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, small, strike, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, aside, section, article, header, footer, main, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+body {
+	margin: 0;
+	}
+	
+header {
+	height: 890px;
+}
+
+main {
+	height: 831px;/*931-100*/
+	width: 1140px;/*добавила 2х15 на маргины прожекта*/
+	box-sizing: border-box;
+	margin: 100px auto 0;
+	text-align: center;
+	}
+	
+footer {box-sizing: border-box;
+	height: 181px;
+	background: #f7654a;
+	text-align: center;
+	}
+	
+
+/*header*/
+
+.top {
+	height: 740px;
+	background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url('965addb3e1b6ba80c136d7410dbfc8b4.jpg') center / cover no-repeat, #404149;
+	font-family: 'Oswald';
+	color: #fff;
+	text-align: center;
+	}
+
+.top-wrap {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	width: 1110px;
+	padding-top: 192px;
+}
+
+.logo {
+	text-indent: -9999px; /*скрыть текст*/
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 60px;
+	height: 50px;
+	background: url('logo.svg');
+	margin: 0 auto;
+}
+
+.gamb {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background: url('gamb.svg');
+	margin: 0 auto;
+}
+
+
+h1 {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 734px;
+	height: 171px;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 95px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+h4 {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 734px;
+	height: 22px;
+	padding-top: 35px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.menu {
+	box-sizing: border-box;
+	height: 300px;
+	width: 1110px;
+	background: #f7f7f7;
+	margin: -150px auto 0;/*наплыв*/
+	text-align: center;
+}
+
+.menu-item {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	width: 190px;
+	height: 186px;
+	margin: 57px 15px; 
+}
+
+.text-item1 {
+	width: 190px;
+	height: 86px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 72px;
+	color: #F7654A;
+	line-height: 110px; /*+3*/
+}
+
+.text-item2 {
+	width: 190px;
+	height: 43px;
+	padding-top: 25px; 
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 55px;/*+2*/
+	text-transform: uppercase;
+	color: #000;
+}
+
+.text-item3 {
+	width: 190px;
+	height: 22px;
+	padding-top: 10px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;/*+3*/
+	color: #999999;
+}
+
+/*main*/
+
+	
+h2 {
+	width: 1140px;
+	height: 43px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 36px;
+	color: #404149;
+/*	line-height: 53px;*/
+	margin: 0;
+}
+
+.project {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 350px;
+	/*height: 578px;*/
+	margin: 60px 15px;
+	
+	
+}
+
+.arena {display: flex;
+		height: 380px;
+		overflow: hidden;
+		justify-content: center;
+}
+
+/*.arena {
+	width: 350px;
+	height: 380px;
+	background: url('stadium.jpg') center, #C4C4C4;
+	background-size: cover;
+}*/
+
+h3 {
+	height: 29px;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 38px;/*+2*/
+	color: #404149;
+	text-align: left;
+	padding-top: 66px;
+}
+
+p {
+	height: 83px;
+	font-family: 'OpenSans';
+	font-size: 16px;
+	line-height: 22px;
+	color: #999999;
+	text-align: left;
+	padding-top: 20px;
+}
+
+
+/*futer*/
+.foot-wrap {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 151px;
+	width: 1110px;
+	text-align: left;
+	margin: 30px auto 0;
+}
+
+.text-foot1 {
+	display: inline-block;
+	width: 586px;
+	height: 57px;
+	vertical-align: text-bottom;
+	font-family: 'Oswald';
+	font-weight: 700;
+	font-size: 48px;
+/*	line-height: 71px;*/
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+
+.text-foot2 {display: inline-block;
+	width: 562px;
+	height: 29px;
+	vertical-align: text-bottom;
+	font-family: 'Oswald';
+	font-weight: 700;
+	font-size: 24px;
+/*	line-height: 36px;*/
+	letter-spacing: 0.02em;
+	color: #fff;
+	padding-top: 20px;
+}
+
+footer button {
+    float: right;
+    background: #fff;
+    border: none;
+    width: 175px;
+    height: 49px;
+    padding: 14px 30px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 43px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px; /*+2*/
+    letter-spacing: 0.05em;
+    text-align: right;
+}
+
+footer button::before {
+    content: '';
+    float: left;
+    height: 21px;
+    width: 18px;
+    background: url('btn.svg') 0px 4px no-repeat;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Загадки</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            div {
+                margin: 30px auto 0;
+				padding: 10px;
+				background: lightgray;
+				border-radius: 20px;
+				width: 280px;
+				height: 30px;
+				text-align: center;
+				font: bold 12px / 16px Arial;
+            }
+			
+			button {
+                display: block;
+                margin: 40px auto;
+                background: blue;
+				border-radius: 20px;
+				width: 200px;
+                height: 80px;
+                font: bold 24px Arial;
+				color: white;
+            }
+        </style>
+        
+        <script>
+            function game() {
+               let count = 0;
+                    
+					let mystery1 = prompt('1. Чтобы спереди погладить, нужно сзади полизать');
+					
+					if (mystery1 == null) alert('Вы нажали "Отмена" и отказались от игры');
+					
+                    if (mystery1.toLowerCase() === 'марка' || mystery1.toLowerCase() === 'почтовая марка') {
+						count++;
+						alert('Молодец! Правильный ответ!');
+					} else {
+					alert('Неправильный ответ');
+					}
+					
+					let mystery2 = prompt('2. Кругом волоса, посредине колбаса');
+					
+					if (mystery2 == null) alert('Вы нажали "Отмена" и отказались от игры');
+					
+					if (mystery2.toLowerCase() === 'кукуруза' || mystery2.toLowerCase() === 'початок' || mystery2.toLowerCase() === 'початок кукурузы') {
+						count++;
+						alert('Молодец! Правильный ответ!');
+					} else {
+					alert('Неправильный ответ');
+					}
+					
+					let mystery3 = prompt('3. То холодный - то горячий, то висячий - то стоячий. Слово из 3 букв.');
+					
+					if (mystery3 == null) alert('Вы нажали "Отмена" и отказались от игры');
+					
+					if (mystery3.toLowerCase() === 'душ') {
+						count++;
+						alert('Молодец! Правильный ответ!');
+					} else {
+					alert('Неправильный ответ! Шалунишка!');
+					}
+					
+					alert(`Количество угаданных загадок: ${count}`);
+            }
+        </script>
+    </head>
+    
+    <body>
+		<div>Чтобы начать игру, нажми синюю кнопку.<br>Если игра надоест, нажми кнопку "Отмена"</div>
+        <button type="button" onclick="game();">Угадай<br> 3 загадки</button>
+    </body>
+</html>
