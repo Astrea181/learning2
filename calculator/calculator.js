@@ -41,7 +41,8 @@ function btn_delend() {
 		screenaim.innerHTML = screenaim.innerHTML.substring(0,screenaim.innerHTML.length-1);
 	} else {screenaim.innerHTML = 0; 
 	screenemptyflag = true;
-	}
+	if (actionargument != null) {screenaim.innerHTML=actionargument};
+	actionsign = null;}
 }
 
 function btn_digit(point) {
